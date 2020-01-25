@@ -28,6 +28,7 @@ Alternatively you can use the maven exec command like:
 For calling below command,first you have to go the project folder directory.
 
 ```shell
+mvn clean install
 mvn exec:java -Dexec.mainClass=com.canemreayar.bookshop.BookShopApplication
 ```
 ## Calling api methods with Postman
