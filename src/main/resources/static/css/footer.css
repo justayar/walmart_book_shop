@@ -1,0 +1,18 @@
+#footer {
+     width: 100%;
+     font-size: 100%;
+     color: #A8AA94;
+     left: 0;
+     bottom: 0;
+     display: flex;
+     justify-content: space-between;
+     height: 40px;
+}
+ #footer p {
+     padding-left:20px;
+}
+ #footer #social_media_icons{
+     padding-right: 20px;
+     padding-bottom : 10px;
+}
+

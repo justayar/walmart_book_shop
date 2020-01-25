@@ -1,0 +1,105 @@
+.book_reviews_summary{
+    padding-left:62px;
+    height:auto;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px;
+
+}
+
+.book_reviews_summary p{
+    font-family: BogleWeb,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: .875rem;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.review {
+  display: inline-block;
+  margin: 2rem;
+  padding: 1.1rem;
+  max-width: 500px;
+
+
+
+  #{&} &__title {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  #{&} &__score {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+
+    .score {
+      //margin-right: 1rem;
+      font-size: 2rem;
+    }
+
+    .score-stars {
+      margin-left: 0.8rem;
+    }
+    img{
+        float:left;
+    }
+  }
+  #{&} &__text {
+    line-height: 1.45;
+  }
+}
+
+.review img{
+    float:left;
+    width: 10px;
+    height: 10px;
+}
+
+.review-rating{
+    width: 30%;
+    float: left;
+}
+
+
+
+.review-overall-rating{
+    font-size: 3.125rem;
+    font-weight: 600;
+    color:black;
+}
+
+.book_score_rating{
+    display: inline;
+    width: 150px;
+    height: 100px;
+ }
+
+ .book_review_histogram{
+    padding-left: 50px;
+    padding-top: 10px;
+    display: table-caption;
+    width: 275px;
+ }
+
+ .book_reviews{
+    display: grid;
+ }
+
+ .book_review_title{
+    font-size: 1rem;
+    font-wight: 600;
+    letter-spacing: -.02em;
+    margin:0;
+    padding:0;
+ }
+
+ .book_review_text{
+     font-size: .875rem;
+
+ }
+
+ .book_review_user_date{
+    color: #6d6e71;
+    font-size: .875rem;
+ }

@@ -1,0 +1,9 @@
+#header {
+     background: #041e42 url(back.png) repeat-x;
+     height:44px;
+}
+ #logo {
+     width: 880px;
+     height: 40px;
+     background: transparent;
+}

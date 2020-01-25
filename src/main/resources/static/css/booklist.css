@@ -1,0 +1,67 @@
+  #book_list_container h2{
+    font-size: 18px;
+    padding: 14px 10px;
+  }
+
+  #book_list_container h3{
+    font-size: 16px;
+    padding: 12px 10px;
+  }
+
+  #book_list_container > h2, h3,a{
+    clear: both;
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+  }
+
+  #book_list_container img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #book_list_container a{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  #book_list_container a:hover{
+    text-decoration: underline;
+    color: #333;
+  }
+
+  #book_list_container{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 0;
+  }
+
+  .book_list_item{
+    width: 200px;
+    margin: 1%;
+    display: inline-block;
+    text-align:center;
+  }
+
+
+   #book_list_container .book_product_name{
+    width: 100%;
+    height: auto;
+    font-size: .875rem;
+    font-weight: 400;
+  }
+
+  #book_list_container .book_product_price{
+    width:100%;
+    bottom: 44px;
+    top:3px;
+    line-height: 22px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+
+
+

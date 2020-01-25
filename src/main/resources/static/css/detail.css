@@ -1,0 +1,117 @@
+#detail_content{
+     overflow: hidden;
+     margin: 20px auto 0 auto;
+     padding: 0 0 10px 0;
+}
+.book_detail_main_features img{
+     max-width: 100%;
+}
+.book_detail_main_features{
+     height: 380px;
+}
+.book_detail_main_features .col-1-2{
+     float: left;
+     width: 50%;
+}
+.product-wrap{
+     margin: 0 auto;
+     width: 350px;
+}
+.product-shot{
+     padding-top: 30px;
+     transition: all 0.5s ease;
+}
+.product-shot::hover{
+     transform: scale(1.1);
+}
+.product-name h2{
+     padding-bottom: 15px;
+     font-size:1.75rem;
+     height:5px;
+     font-weight: 400;
+     color:black;
+     letter-spacing: -.02em;
+     line-height: 1.5
+}
+.product-price h3{
+     margin-top:75px;
+     font-size: 1.5rem;
+     font-weight: 600;
+}
+.book_detail_description{
+     margin-top: 80px;
+     line-height: 1.6;
+     height: auto;
+     padding-left: 62px;
+     width:60%;
+     font-family: BogleWeb,Helvetica Neue,Helvetica,Arial,sans-serif;
+     font-size: .875rem;
+}
+.book_detail_specifications{
+     margin-top: 20px;
+     line-height: 1.6;
+     height: auto;
+     padding-left: 62px;
+     width:60%;
+     font-family: BogleWeb,Helvetica Neue,Helvetica,Arial,sans-serif;
+     font-size: .875rem;
+}
+.book_detail_main_features .button{
+     display: inline-block;
+     margin-top: 35px;
+     padding: 12px 25px;
+     font-size: 16px;
+     text-decoration: none;
+     background-color: #505050;
+     color: white;
+     transition: 0.25s ease;
+}
+.book_detail_main_features .button:hover{
+     background-color: #323232;
+}
+.align-left {
+     text-align:left;
+}
+.section {
+     font-weight: 400;
+     font-size: 1.5rem;
+}
+.book_detail_specifications .specTable{
+     width:620px;
+     margin: 24px 0 0;
+     min-width: 100%;
+     padding: 0;
+     border-bottom: 2px solid #e6e7e8;
+     border-collapse: collapse;
+     border-spacing: 0;
+     color: #000;
+     font-size: 14px;
+     font-size: .875rem
+}
+.book_detail_specifications .specTable tr{
+     height: 52px;
+}
+.book_detail_specifications .specTable tr:nth-child(odd){
+     background-color: rgba(148,148,153,0.2);
+}
+.book_detail_specifications .specTable td{
+     background: none;
+}
+.book_detail_specifications .specTable td{
+     padding: 7px 15px;
+}
+#content {
+     text-align: left;
+     padding: 0 0 0 5px;
+     float: left;
+}
+#content ul {
+     margin: 2px 0 22px 0px;
+}
+#content ul li {
+     list-style-type: none;
+     background: url(bullet.png) no-repeat;
+     margin: 0 0 0 0;
+     padding: 0 0 4px 25px;
+     line-height: 1.5em;
+}
