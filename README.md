@@ -25,15 +25,19 @@ There are several ways to run a Spring application on your local machine. One wa
 
 Alternatively you can use the maven exec command like:
 
-For calling below command,first you have to go the project folder directory.
+For calling below commands,first you have to go the project folder directory.
 
 ```shell
 mvn clean install
 mvn exec:java -Dexec.mainClass=com.canemreayar.bookshop.BookShopApplication
 ```
-## Calling api methods with Postman
+
+After execution completed, you can open your favourite browser and call http://localhost:8080/bookList
+
+If you would like to test api methods as a rest client, you can use below postman collections.
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/291cfa620eb53863acb4)
+
 
 ## Copyright
 
