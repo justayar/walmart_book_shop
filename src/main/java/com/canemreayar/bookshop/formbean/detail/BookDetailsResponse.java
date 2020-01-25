@@ -1,17 +1,14 @@
 package com.canemreayar.bookshop.formbean.detail;
 
-import com.canemreayar.bookshop.formbean.review.ItemReviewBean;
-import com.canemreayar.bookshop.formbean.review.ItemReviewListBean;
+import com.canemreayar.bookshop.formbean.review.BookItemReviewListBean;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-
 @Getter
 @Setter
 @NoArgsConstructor
-public class DetailOutputBean {
+public class BookDetailsResponse {
 
     private int itemId;
     private String productName;
@@ -19,7 +16,7 @@ public class DetailOutputBean {
     private double actualPrice;
     private double salePrice;
     private String detailImage;
-    private ItemReviewListBean itemReviews;
+    private BookItemReviewListBean itemReviews;
     private String author;
     private String upc;
 }

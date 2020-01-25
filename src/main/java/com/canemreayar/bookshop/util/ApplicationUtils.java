@@ -1,39 +1,23 @@
 package com.canemreayar.bookshop.util;
 
-import com.canemreayar.bookshop.constants.ApplicationConstants;
-import com.canemreayar.bookshop.formbean.review.ItemReviewBean;
+import com.canemreayar.bookshop.constants.BookShopConstants;
+import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.List;
 
+@Component
 public class ApplicationUtils {
 
-    public static ModelAndView getModelAndView(String viewName,String modelName,Object modelObject){
+    private ApplicationUtils(){ }
+
+    public ModelAndView getModelAndView(String viewName,String modelName,Object modelObject){
 
         ModelAndView modelAndView = new ModelAndView(viewName,modelName,modelObject);
 
-        modelAndView.addObject("assetsUrl", ApplicationConstants.ASSETS_URL);
+        modelAndView.addObject("assetsUrl", BookShopConstants.ASSETS_URL);
 
         return modelAndView;
 
     }
-
-    public static void setNumberOfStars(List<ItemReviewBean> itemReviewBeanList){
-
-        if(itemReviewBeanList != null){
-
-            for(ItemReviewBean itemReviewBean : itemReviewBeanList){
-
-                if(itemReviewBean != null){
-
-                    if(itemReviewBean.getOverallRating() != null){
-                        itemReviewBean.setNumberOfStars(Integer.parseInt(itemReviewBean.getOverallRating().getRating()));
-                    }
-
-                }
-            }
-        }
-    }
-
 
 }

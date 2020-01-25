@@ -1,22 +1,18 @@
 package com.canemreayar.bookshop.service;
 
-import com.canemreayar.bookshop.formbean.detail.ItemDetailBean;
-import com.canemreayar.bookshop.formbean.review.ItemReviewBean;
-import com.canemreayar.bookshop.formbean.review.ItemReviewListBean;
-import com.canemreayar.bookshop.constants.ApplicationConstants;
-import com.canemreayar.bookshop.formbean.list.ItemListBean;
+import com.canemreayar.bookshop.formbean.detail.BookItemDetailBean;
+import com.canemreayar.bookshop.formbean.review.BookItemReviewListBean;
+import com.canemreayar.bookshop.constants.BookShopConstants;
+import com.canemreayar.bookshop.formbean.list.BookItemsListBean;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.client.BufferingClientHttpRequestFactory;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
-import org.springframework.http.client.SimpleClientHttpRequestFactory;
-import org.springframework.http.converter.StringHttpMessageConverter;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.nio.charset.Charset;
-import java.util.List;
 
 @Service
 public class BookServiceImpl implements BookService {
@@ -36,42 +32,46 @@ public class BookServiceImpl implements BookService {
     @Autowired
     private RestTemplate restTemplate;
 
+    private static final String API_KEY_PARAM = "&apiKey=";
 
-    public ItemListBean getHomePageBookItems() {
+    private final Logger logger = LoggerFactory.getLogger(getClass());
+
+    public BookItemsListBean getBookListItems() {
+
+        logger.info("[(getBookListItems()] Book List service will be called.");
 
         HttpComponentsClientHttpRequestFactory clientHttpRequestFactory = new HttpComponentsClientHttpRequestFactory(
                 HttpClientBuilder.create().build());
 
         restTemplate = new RestTemplate(clientHttpRequestFactory);
 
-        ItemListBean itemList = restTemplate.getForObject(
+        return restTemplate.getForObject(
                 WALMART_LIST_REST_URL +
-                        "?category=" + ApplicationConstants.BOOK_CATEGORY_ID +
-                        "&apiKey=" + WALMART_API_KEY +
-                        "&format=" + ApplicationConstants.API_FORMAT +
+                        "?category=" + BookShopConstants.BOOK_CATEGORY_ID +
+                        API_KEY_PARAM+ WALMART_API_KEY +
+                        "&format=" + BookShopConstants.API_FORMAT +
                         "&count=200",
-                ItemListBean.class);
+                BookItemsListBean.class);
 
-        return itemList;
 
     }
 
-    public ItemListBean getNextPageBookItems(String nextPage) {
+    public BookItemsListBean getNextPageBookItems(String nextPage) {
 
-        ItemListBean itemList = restTemplate.getForObject(
+        return restTemplate.getForObject(
                 nextPage,
-                ItemListBean.class);
-
-        return itemList;
+                BookItemsListBean.class);
 
     }
 
-    public ItemDetailBean getItemDetail(int itemId) {
+    public BookItemDetailBean getBookItemDetails(int itemId) {
+
+        logger.info("[(getBookItemDetails()] Book Item Detail service will be called with itemId= {}",itemId);
 
         String detailUrl = WALMART_ITEM_DETAIL_REST_URL +
                      itemId +
-                     "?format=" + ApplicationConstants.API_FORMAT +
-                     "&apiKey=" + WALMART_API_KEY;
+                     "?format=" + BookShopConstants.API_FORMAT +
+                     API_KEY_PARAM + WALMART_API_KEY;
 
         HttpComponentsClientHttpRequestFactory clientHttpRequestFactory = new HttpComponentsClientHttpRequestFactory(
                 HttpClientBuilder.create().build());
@@ -79,24 +79,23 @@ public class BookServiceImpl implements BookService {
         restTemplate = new RestTemplate(clientHttpRequestFactory);
 
 
-        ItemDetailBean itemDetail = restTemplate.getForObject(
+        return restTemplate.getForObject(
                 detailUrl,
-                ItemDetailBean.class);
-
-        return itemDetail;
+                BookItemDetailBean.class);
 
     }
 
-    public ItemReviewListBean getItemReviews(int itemId) {
+    public BookItemReviewListBean getBookReviews(int itemId) {
 
-        ItemReviewListBean itemReviewList = restTemplate.getForObject(
+        logger.info("[(getBookReviews()] Book Reviews service will be called with itemId= {}",itemId);
+
+        return restTemplate.getForObject(
                 WALMART_ITEM_REVIEWS_URL +
                         itemId +
-                        "?format=" + ApplicationConstants.API_FORMAT +
-                        "&apiKey=" + WALMART_API_KEY,
-                ItemReviewListBean.class);
+                        "?format=" + BookShopConstants.API_FORMAT +
+                        API_KEY_PARAM + WALMART_API_KEY,
+                BookItemReviewListBean.class);
 
-        return itemReviewList;
     }
 
 }

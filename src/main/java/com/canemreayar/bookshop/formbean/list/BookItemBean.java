@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ItemBean {
+public class BookItemBean {
 
     private int itemId;
     private String name;

@@ -1,20 +1,17 @@
 package com.canemreayar.bookshop.service;
 
-import com.canemreayar.bookshop.formbean.detail.ItemDetailBean;
-import com.canemreayar.bookshop.formbean.list.ItemListBean;
-import com.canemreayar.bookshop.formbean.review.ItemReviewBean;
-import com.canemreayar.bookshop.formbean.review.ItemReviewListBean;
-
-import java.util.List;
+import com.canemreayar.bookshop.formbean.detail.BookItemDetailBean;
+import com.canemreayar.bookshop.formbean.list.BookItemsListBean;
+import com.canemreayar.bookshop.formbean.review.BookItemReviewListBean;
 
 public interface BookService {
 
-    ItemListBean getHomePageBookItems();
+    BookItemsListBean getBookListItems();
 
-    ItemListBean getNextPageBookItems(String nextPage);
+    BookItemsListBean getNextPageBookItems(String nextPage);
 
-    ItemDetailBean getItemDetail(int itemId);
+    BookItemDetailBean getBookItemDetails(int itemId);
 
-    ItemReviewListBean getItemReviews(int itemId);
+    BookItemReviewListBean getBookReviews(int itemId);
 
 }

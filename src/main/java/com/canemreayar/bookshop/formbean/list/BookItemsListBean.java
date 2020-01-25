@@ -6,13 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Getter @Setter
-public class ItemListBean {
+public class BookItemsListBean {
 
-    private List<ItemBean> items;
+    private List<BookItemBean> items;
     private int totalPages;
     private String nextPage;
 
-    public ItemListBean() {
+    public BookItemsListBean() {
 
         items = new ArrayList<>();
     }

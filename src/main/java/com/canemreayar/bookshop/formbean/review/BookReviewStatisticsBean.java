@@ -5,12 +5,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class RatingDistributions {
+public class BookReviewStatisticsBean {
 
-    private String count;
-    private String ratingValue;
+    private String averageOverallRating;
+    private List<BookRatingDistributions> bookRatingDistributions;
+    private String totalReviewCount;
+
 }

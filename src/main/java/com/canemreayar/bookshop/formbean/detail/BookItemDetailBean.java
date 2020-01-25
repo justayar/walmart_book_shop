@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ItemDetailBean {
+public class BookItemDetailBean {
 
     private int itemId;
     private String name;

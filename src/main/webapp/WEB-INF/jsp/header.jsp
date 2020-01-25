@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <head>
     <link rel="stylesheet" type="text/css" href="${assetsUrl}/css/header.css" />
+    <title>Header Tag</title>
 </head>
 <div id="header">
     <div id="logo">

@@ -2,6 +2,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <head>
 	<link rel="stylesheet" type="text/css" href="${assetsUrl}/css/detail.css"/>
+	<title>Book Rating</title>
 </head>
 <c:choose>
 	<c:when test="${param.rating == 5.0 }">

@@ -25,10 +25,10 @@ function openAnotherPage(pageNum,nextPage){
 
 }
 
-function setVisibilityOfPrevButton(openedPageNum){
+function setVisibilityOfPrevButton(nextOpenedPageNum){
      var firstPageNum = 1;
 
-     if(openedPageNum == 1){
+     if(nextOpenedPageNum == firstPageNum){
         hidePrevButton();
      }else{
         showPrevButton();
@@ -43,7 +43,7 @@ function hidePrevButton(){
 }
 
 
-function showPrevButton(openedPageNum){
+function showPrevButton(){
      var prevButton = document.getElementsByClassName("prev");
      prevButton[0].style.visibility = 'visible';
 }
@@ -56,10 +56,10 @@ function makeAllPageDivsToNoDisplay(pages){
 
 }
 
-function makeVisibleToOpenedPage(pages,openedPageNum){
+function makeVisibleToOpenedPage(pages,nextOpenedPageNum){
 
-      var openedPageNumIndex = openedPageNum -1;
-      pages[openedPageNumIndex].style.display = "block";
+      var nextOpenedPageNumIndex = nextOpenedPageNum -1;
+      pages[nextOpenedPageNumIndex].style.display = "block";
 }
 
 function goToNextPage(){
@@ -117,9 +117,9 @@ function removeUnderlineFromPrevOpenedPageInPagination(paginationElements,prevPa
     paginationElements[prevOpenedPageNumIndex].style.textDecoration = "none";
 }
 
-function addUnderlineToOpenedPageInPagination(paginationElements,openedPageNum){
+function addUnderlineToOpenedPageInPagination(paginationElements,nextOpenedPageNum){
 
-    var openedPageNumIndex = openedPageNum -1;
-    paginationElements[openedPageNumIndex].style.textDecoration = "underline";
+    var nextOpenedPageNumIndex = nextOpenedPageNum -1;
+    paginationElements[nextOpenedPageNumIndex].style.textDecoration = "underline";
 
 }

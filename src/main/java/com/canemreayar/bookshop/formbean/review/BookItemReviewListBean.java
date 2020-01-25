@@ -11,10 +11,9 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ReviewStatisticsBean {
+public class BookItemReviewListBean {
 
-    private String averageOverallRating;
-    private List<RatingDistributions> ratingDistributions;
-    private String totalReviewCount;
-
+    private int itemId;
+    private List<BookItemReviewBean> reviews;
+    private BookReviewStatisticsBean reviewStatistics;
 }

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <head>
     <link rel="stylesheet" type="text/css" href="${assetsUrl}/css/footer.css" />
+    <title>Footer Page</title>
 </head>
 <div id="footer">
 	<p>© 2020 Can Emre Ayar. All Rights Reserved.</p>

@@ -1,6 +1,6 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %><%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>Simple Walmart Book Shop</title>
 		<meta name="description" content="Simple Walmart Book Shop" />
@@ -81,7 +81,7 @@
                                    <h4 class="book_review_title">&nbsp;${review.title}</h4>
                                    <br/>
                                    <div class="book_review_text">
-                                        <i>${review.reviewText}</i>
+                                        <em>${review.reviewText}</em>
                                    </div>
                                    <br/>
                                    <div class="book_review_user_date">

@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ItemReviewBean {
+public class BookItemReviewBean {
 
     private String reviewer;
     private String reviewText;

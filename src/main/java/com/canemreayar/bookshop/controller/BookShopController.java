@@ -1,69 +1,86 @@
 package com.canemreayar.bookshop.controller;
 
-import com.canemreayar.bookshop.formbean.review.ItemReviewListBean;
+import com.canemreayar.bookshop.constants.BookShopConstants;
+import com.canemreayar.bookshop.formbean.review.BookItemReviewListBean;
 import com.canemreayar.bookshop.util.ApplicationUtils;
-import com.canemreayar.bookshop.formbean.detail.DetailOutputBean;
-import com.canemreayar.bookshop.formbean.detail.ItemDetailBean;
-import com.canemreayar.bookshop.formbean.list.ItemListBean;
-import com.canemreayar.bookshop.formbean.list.ListOutputBean;
-import com.canemreayar.bookshop.formbean.review.ItemReviewBean;
-import com.canemreayar.bookshop.mapper.BookshopMapper;
+import com.canemreayar.bookshop.formbean.detail.BookDetailsResponse;
+import com.canemreayar.bookshop.formbean.detail.BookItemDetailBean;
+import com.canemreayar.bookshop.formbean.list.BookItemsListBean;
+import com.canemreayar.bookshop.formbean.list.BookListResponse;
+import com.canemreayar.bookshop.mapper.BookShopMapper;
 import com.canemreayar.bookshop.service.BookService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.List;
 
 @Controller
 public class BookShopController {
 
     @Autowired
-    BookService bookService;
+    private BookService bookService;
 
+    @Autowired
+    private ApplicationUtils applicationUtils;
+
+    @Autowired
+    private BookShopMapper bookShopMapper;
+
+    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @GetMapping(value = "/bookList")
-    public ModelAndView requestHomePage() {
+    public ModelAndView requestBookList() {
 
+        logger.info("[(requestHomePage()] Book List api called.");
 
-        ItemListBean itemListBean = bookService.getHomePageBookItems();
+        BookItemsListBean bookItemsListBean = bookService.getBookListItems();
 
-        ListOutputBean listOutputBean = BookshopMapper.mapToListOutputBean(itemListBean,0);
+        BookListResponse bookListResponse = bookShopMapper.mapToBookListResponse(bookItemsListBean, BookShopConstants.DEFAULT_OPENED_PAGE_NUM);
 
-        ModelAndView mv = ApplicationUtils.getModelAndView("bookList", "listOutput",listOutputBean);
+        logger.info("[(requestHomePage()] Book List response: {} ", bookListResponse);
 
-        return mv;
+        return applicationUtils.getModelAndView("bookList", "listOutput", bookListResponse);
+
     }
 
 
-    @GetMapping(value = "/list/{pageNum}")
-    public ModelAndView requestPageList(@PathVariable("pageNum") int pageNum,
+    @GetMapping(value = "/bookList/{pageNum}")
+    public ModelAndView requestBookListWithSpecifiedPage(@PathVariable("pageNum") int pageNum,
                                         @PathVariable("nextPage") String nextPage) {
 
-        ItemListBean itemListBean = bookService.getNextPageBookItems(nextPage);
+        logger.info("[(requestBookListWithSpecifiedPage()] Book List api called with specified page. Requested page number is {}",pageNum);
 
-        ListOutputBean listOutputBean = BookshopMapper.mapToListOutputBean(itemListBean,pageNum);
 
-        ModelAndView mv = ApplicationUtils.getModelAndView("bookList", "listOutput",listOutputBean);
+        BookItemsListBean bookItemsListBean = bookService.getNextPageBookItems(nextPage);
 
-        return mv;
+        BookListResponse bookListResponse = bookShopMapper.mapToBookListResponse(bookItemsListBean,pageNum);
+
+        logger.info("[(requestBookListWithSpecifiedPage()] Book List requested page response: {} ", bookListResponse);
+
+        return applicationUtils.getModelAndView("bookList", "listOutput", bookListResponse);
+
     }
 
     @GetMapping(value = "/bookDetails/{itemId}")
-    public ModelAndView requestItemDetail(@PathVariable("itemId") int itemId) {
+    public ModelAndView requestBookDetails(@PathVariable("itemId") int itemId) {
 
+        logger.info("[(requestBookDetails()] Book Details api called with parameter itemId= {}",itemId);
 
-        ItemDetailBean itemDetail = bookService.getItemDetail(itemId);
+        BookItemDetailBean itemDetail = bookService.getBookItemDetails(itemId);
 
-        ItemReviewListBean itemReviewListBean = bookService.getItemReviews(itemId);
+        logger.info("[(requestBookDetails()] Book Reviews service called with parameter itemId= {}",itemId);
 
-        DetailOutputBean detailOutputBean = BookshopMapper.mapToDetailOutputBean(itemDetail,itemReviewListBean);
+        BookItemReviewListBean bookItemReviewListBean = bookService.getBookReviews(itemId);
 
-        ModelAndView mv = ApplicationUtils.getModelAndView("bookDetails", "detailOutput",detailOutputBean);
+        BookDetailsResponse bookDetailsResponse = bookShopMapper.mapToBookDetailsResponse(itemDetail, bookItemReviewListBean);
 
-        return mv;
+        logger.info("[(requestBookDetails()] Book Details api response is {}", bookDetailsResponse);
+
+        return applicationUtils.getModelAndView("bookDetails", "detailOutput", bookDetailsResponse);
     }
 
 
