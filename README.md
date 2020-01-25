@@ -30,6 +30,9 @@ For calling below command,first you have to go the project folder directory.
 ```shell
 mvn exec:java -Dexec.mainClass=com.canemreayar.bookshop.BookShopApplication
 ```
+## Calling api methods with Postman
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/291cfa620eb53863acb4)
 
 ## Copyright
 
