@@ -11,7 +11,7 @@ import java.util.List;
 @NoArgsConstructor
 public class BookListResponse {
 
-    private List<PagedBookItemsBean> pagedBookItemsBeanList;
+    private List<PagedBookItemsBean> pageItemsBeanList;
     private String nextPage;
     private int totalPages;
     private int openedPageNum;

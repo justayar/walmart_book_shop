@@ -14,7 +14,7 @@ import java.util.List;
 public class BookReviewStatisticsBean {
 
     private String averageOverallRating;
-    private List<BookRatingDistributions> bookRatingDistributions;
+    private List<BookRatingDistributions> ratingDistributions;
     private String totalReviewCount;
 
 }

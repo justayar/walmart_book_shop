@@ -44,7 +44,7 @@ public class BookShopMapper {
 
 
         BookListResponse bookListResponse = new BookListResponse();
-        bookListResponse.setPagedBookItemsBeanList(pagedBookItemsBeanList);
+        bookListResponse.setPageItemsBeanList(pagedBookItemsBeanList);
         bookListResponse.setNextPage(itemBeanList.getNextPage());
         bookListResponse.setTotalPages(itemBeanList.getTotalPages());
         bookListResponse.setOpenedPageNum(pageNum);
@@ -81,9 +81,9 @@ public class BookShopMapper {
 
     private  void reverseRatingDistributionsHighToLow(BookItemReviewListBean bookItemReviewListBean) {
         if(bookItemReviewListBean.getReviewStatistics() != null) {
-            List<BookRatingDistributions> bookRatingDistributions = bookItemReviewListBean.getReviewStatistics().getBookRatingDistributions();
+            List<BookRatingDistributions> bookRatingDistributions = bookItemReviewListBean.getReviewStatistics().getRatingDistributions();
             Collections.reverse(bookRatingDistributions);
-            bookItemReviewListBean.getReviewStatistics().setBookRatingDistributions(bookRatingDistributions);
+            bookItemReviewListBean.getReviewStatistics().setRatingDistributions(bookRatingDistributions);
         }
     }
 
