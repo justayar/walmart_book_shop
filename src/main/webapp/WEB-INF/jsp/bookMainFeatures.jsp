@@ -14,6 +14,9 @@
 	<div class="product-name">
 		<h2>${param.productName}</h2>
 	</div>
+	<div class="product-info">
+    		<h3 class="align-left">${param.productAuthorName}
+    </div>
 	<div class="product-price">
 		<h3 class="align-left">$${param.productSalePrice}&nbsp;&nbsp;
 			<c:if test="${param.productActualPrice ne 0.0}">
@@ -21,4 +24,5 @@
 			</c:if>
 		</h3>
 	</div>
+
 </div>

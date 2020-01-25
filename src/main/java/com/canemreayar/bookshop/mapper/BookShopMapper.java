@@ -13,6 +13,8 @@ import com.canemreayar.bookshop.formbean.review.BookRatingDistributions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+
+import java.awt.print.Book;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -53,7 +55,7 @@ public class BookShopMapper {
 
     }
 
-    public BookDetailsResponse mapToBookDetailsResponse(BookItemDetailBean itemDetail, BookItemReviewListBean bookItemReviewListBean){
+    public BookDetailsResponse mapToBookDetailsResponse(BookItemDetailBean itemDetail, BookItemReviewListBean bookItemReviewListBean) {
 
         BookDetailsResponse bookDetailsResponse = new BookDetailsResponse();
 
@@ -64,10 +66,14 @@ public class BookShopMapper {
         bookDetailsResponse.setActualPrice(itemDetail.getMsrp());
         bookDetailsResponse.setSalePrice(itemDetail.getSalePrice());
 
-        if(itemDetail.getBrandName() != null) {
+        if (itemDetail.getBrandName() != null) {
             bookDetailsResponse.setAuthor(itemDetail.getBrandName().replace(";", ","));
         }
         bookDetailsResponse.setUpc(itemDetail.getUpc());
+
+        setBookOfferType(itemDetail, bookDetailsResponse);
+
+        setBookOnlineAvailability(itemDetail, bookDetailsResponse);
 
         reverseRatingDistributionsHighToLow(bookItemReviewListBean);
 
@@ -77,6 +83,26 @@ public class BookShopMapper {
 
         return bookDetailsResponse;
 
+    }
+
+    private void setBookOnlineAvailability(BookItemDetailBean itemDetail, BookDetailsResponse bookDetailsResponse) {
+        if(itemDetail.isAvailableOnline()){
+            bookDetailsResponse.setAvailableOnline(BookShopConstants.ONLINE_AVAILABLE);
+        }else{
+            bookDetailsResponse.setAvailableOnline(BookShopConstants.ONLINE_NOT_AVAILABLE);
+        }
+    }
+
+    private void setBookOfferType(BookItemDetailBean itemDetail, BookDetailsResponse bookDetailsResponse) {
+        if (itemDetail.getOfferType().equals(BookShopConstants.OFFER_TYPE_ONLY_ONLINE)){
+            bookDetailsResponse.setOfferType("Online");
+        }else if(itemDetail.getOfferType().equals(BookShopConstants.OFFER_TYPE_ONLY_STORE)){
+            bookDetailsResponse.setOfferType("Store");
+
+        }else if(itemDetail.getOfferType().equals(BookShopConstants.OFFER_TYPE_ONLINE_AND_STORE)){
+            bookDetailsResponse.setOfferType("Online and Store");
+
+        }
     }
 
     private  void reverseRatingDistributionsHighToLow(BookItemReviewListBean bookItemReviewListBean) {

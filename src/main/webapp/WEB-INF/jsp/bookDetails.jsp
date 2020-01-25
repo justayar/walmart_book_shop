@@ -20,6 +20,7 @@
                              <jsp:param name="productName" value="${detailOutput.productName}" />
                              <jsp:param name="productSalePrice" value="${detailOutput.salePrice}" />
                              <jsp:param name="productActualPrice" value="${detailOutput.actualPrice}" />
+                             <jsp:param name="productAuthorName" value="${detailOutput.author}" />
                         </jsp:include>
 					</div>
 
@@ -33,6 +34,8 @@
                          <jsp:include page="bookSpecifications.jsp" >
                               <jsp:param name="author" value="${detailOutput.author}" />
                               <jsp:param name="upc" value="${detailOutput.upc}" />
+                              <jsp:param name="availableOnline" value="${detailOutput.availableOnline}" />
+                              <jsp:param name="offerType" value="${detailOutput.offerType}" />
                          </jsp:include>
                     </div>
 

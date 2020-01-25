@@ -19,4 +19,6 @@ public class BookDetailsResponse {
     private BookItemReviewListBean itemReviews;
     private String author;
     private String upc;
+    private String offerType;
+    private String availableOnline;
 }

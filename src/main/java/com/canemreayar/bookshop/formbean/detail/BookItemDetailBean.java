@@ -20,6 +20,8 @@ public class BookItemDetailBean {
     private double msrp;
     private String brandName;
     private String upc;
+    private String offerType;
+    private boolean availableOnline;
 
 
 
