@@ -1,7 +1,6 @@
 
 # Walmart Book Shop Application
-
-[![Build Status](https://travis-ci.org/justayar/walmart_book_shop.svg?branch=master)](https://travis-ci.com/justayar/walmart_book_shop/)
+[![Build Status](https://travis-ci.org/justayar/walmart_book_shop.svg?branch=master)](https://travis-ci.org/justayar/walmart_book_shop)
 [![Coverage Status](https://coveralls.io/repos/github/codecentric/springboot-sample-app/badge.svg?branch=master)](https://coveralls.io/github/codecentric/springboot-sample-app?branch=master)
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
