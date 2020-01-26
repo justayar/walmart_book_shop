@@ -12,7 +12,7 @@ Walmart Book Shop Application shows list of available books in a paginated fashi
 
 For building and running the application you need:
 
-- [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [JDK 1.10](https://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html)
 - [Maven 3](https://maven.apache.org)
 - [Lombok](https://projectlombok.org/)
     * For IntelliJ [Lombok IntelliJ Plugin] (https://plugins.jetbrains.com/plugin/6317-lombok)
