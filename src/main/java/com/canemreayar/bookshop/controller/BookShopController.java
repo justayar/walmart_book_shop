@@ -47,24 +47,6 @@ public class BookShopController {
 
     }
 
-
-    @GetMapping(value = "/bookList/{pageNum}")
-    public ModelAndView requestBookListWithSpecifiedPage(@PathVariable("pageNum") int pageNum,
-                                        @PathVariable("nextPage") String nextPage) {
-
-        logger.info("[(requestBookListWithSpecifiedPage()] Book List api called with specified page. Requested page number is {}",pageNum);
-
-
-        BookItemsListBean bookItemsListBean = bookService.getNextPageBookItems(nextPage);
-
-        BookListResponse bookListResponse = bookShopMapper.mapToBookListResponse(bookItemsListBean,pageNum);
-
-        logger.info("[(requestBookListWithSpecifiedPage()] Book List requested page response: {} ", bookListResponse);
-
-        return applicationUtils.getModelAndView("bookList", "listOutput", bookListResponse);
-
-    }
-
     @GetMapping(value = "/bookDetails/{itemId}")
     public ModelAndView requestBookDetails(@PathVariable("itemId") int itemId) {
 

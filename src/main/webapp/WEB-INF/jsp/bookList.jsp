@@ -35,12 +35,13 @@
 					</div>
 					<div id="pagination">
 						<c:set var="openedPageIndex" value="${listOutput.openedPageNum}" />
-						<img class="prev" onclick="goToPreviousPage()" src="${assetsUrl}/img/paginator_prev.svg" alt="prevButton" width="30px" height="30px"
+						<c:set var="numberOfPages" value="${fn:length(listOutput.pageItemsBeanList)}" />
+						<img class="prev" onclick="goToPreviousPage(${numberOfPages})" src="${assetsUrl}/img/paginator_prev.svg" alt="prevButton" width="30px" height="30px"
                               style="visibility:hidden"/>
 						<c:forEach begin="${openedPageIndex+1}" end="${openedPageIndex+10}" varStatus="loop">
-							<a class="page-numbers" onclick="openAnotherPage(${loop.index})">${loop.index}</a>
+							<a class="page-numbers" onclick="openAnotherPage(${loop.index},${numberOfPages})">${loop.index}</a>
 						</c:forEach>
-						<img class="next" onclick="goToNextPage()" src="${assetsUrl}/img/paginator_next.svg" alt="nextButton" width="30px" height="30px"/>
+						<img class="next" onclick="goToNextPage(${numberOfPages})" src="${assetsUrl}/img/paginator_next.svg" alt="nextButton" width="30px" height="30px"/>
 				    </div>
 				</div>
 			</div>

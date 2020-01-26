@@ -2,15 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6033114a-d730-46f8-8691-439e905a381f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/PagedBookItemReviews.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/constants/BookShopConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/constants/BookShopConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/controller/BookShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/controller/BookShopController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookDetailsResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookDetailsResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookItemDetailBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookItemDetailBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/mapper/BookShopMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/mapper/BookShopMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/review.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/review.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookDetails.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookDetails.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookMainFeatures.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookMainFeatures.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookSpecifications.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookSpecifications.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/mapper/BookShopMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/mapper/BookShopMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canemreayar/bookshop/BookShopApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/canemreayar/bookshop/BookShopApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canemreayar/bookshop/controller/BookShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/canemreayar/bookshop/controller/BookShopController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canemreayar/bookshop/mapper/BookshopMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/canemreayar/bookshop/mapper/BookshopMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canemreayar/bookshop/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/canemreayar/bookshop/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/canemreayar/bookshop/service/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/canemreayar/bookshop/service/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/css/review.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/css/review.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/main.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,6 +31,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/book_shop$com_canemreayar_bookshop_in_book_shop.ic" NAME="com.canemreayar.bookshop in book-shop Coverage Results" MODIFIED="1580056260183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.canemreayar.bookshop.*</FILTER>
+    </SUITE>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-725336285">
@@ -87,49 +105,49 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="3" />
-          <entry key="css" value="26" />
+          <entry key="class" value="19" />
+          <entry key="css" value="29" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="4" />
-          <entry key="java" value="99" />
-          <entry key="js" value="6" />
-          <entry key="jsp" value="34" />
+          <entry key="java" value="126" />
+          <entry key="js" value="7" />
+          <entry key="jsp" value="40" />
           <entry key="md" value="2" />
-          <entry key="properties" value="4" />
+          <entry key="properties" value="6" />
           <entry key="xml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="CSS" value="26" />
+          <entry key="CLASS" value="19" />
+          <entry key="CSS" value="29" />
           <entry key="HTML" value="4" />
-          <entry key="JAVA" value="99" />
-          <entry key="JSP" value="34" />
-          <entry key="JavaScript" value="6" />
+          <entry key="JAVA" value="126" />
+          <entry key="JSP" value="40" />
+          <entry key="JavaScript" value="7" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="4" />
+          <entry key="Properties" value="6" />
           <entry key="XML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="1459" />
+          <entry key="css" value="1461" />
           <entry key="dummy" value="180" />
-          <entry key="java" value="4790" />
-          <entry key="js" value="1747" />
-          <entry key="jsp" value="4354" />
+          <entry key="java" value="7863" />
+          <entry key="js" value="1887" />
+          <entry key="jsp" value="4528" />
           <entry key="properties" value="129" />
           <entry key="xml" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="1459" />
-          <entry key="JAVA" value="4790" />
-          <entry key="JSP" value="4354" />
-          <entry key="JavaScript" value="1747" />
+          <entry key="CSS" value="1461" />
+          <entry key="JAVA" value="7863" />
+          <entry key="JSP" value="4528" />
+          <entry key="JavaScript" value="1887" />
           <entry key="PLAIN_TEXT" value="180" />
           <entry key="Properties" value="129" />
           <entry key="XML" value="24" />
@@ -140,28 +158,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookDetails.jsp">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="62" column="36" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="62" selection-end-column="36" />
+            <state relative-caret-position="132">
+              <caret line="40" column="20" selection-start-line="40" selection-end-line="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookSpecifications.jsp">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/mapper/BookShopMapperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookItemDetailBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="206">
+              <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -170,22 +182,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/review/rate/RateBean.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookMainFeatures.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/BookShopApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="60">
+              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="113" selection-start-line="113" selection-end-line="113" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,8 +214,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/mapper/BookShopMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="64">
+              <caret line="143" column="79" lean-forward="true" selection-start-line="143" selection-start-column="79" selection-end-line="143" selection-end-column="79" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,19 +224,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookList.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/detail.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -223,19 +238,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/constants/BookShopConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="190">
+              <caret line="15" column="68" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookDetailsResponse.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookItemDetailBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar!/org/mockito/internal/invocation/RealMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+              <folding>
+                <element signature="e#1379#1380#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -247,17 +274,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>site_content</find>
-      <find>content</find>
-      <find>openedIndex</find>
-      <find>grid-container</find>
       <find>grid-item</find>
       <find>book_list_container</find>
       <find>view-product</find>
@@ -284,6 +307,10 @@
       <find>customer-reviews</find>
       <find>review__text</find>
       <find>score-stars</find>
+      <find>openedPageIndex</find>
+      <find>nextPage</find>
+      <find>open</find>
+      <find>setVisibilityOfPrevButton</find>
     </findStrings>
     <replaceStrings>
       <replace>openedPageIndex</replace>
@@ -307,7 +334,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/list/ItemBean.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/ItemDetailBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/review/RatingDistributions.java" />
@@ -323,41 +349,42 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/detail.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/footer.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookReview.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/review.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookService.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/BookShopApplicationTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/mapper/BookshopMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/DetailOutputBean.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookDescription.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookList.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/footer.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/rating.jsp" />
         <option value="$PROJECT_DIR$/target/classes/static/js/main.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/util/ApplicationUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/BookShopApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/configuration/SwaggerConfig.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/mapper/BookShopMapperTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/constants/ApplicationConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/list/BookItemsListBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/list/BookItemBean.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/list/PagedBookItemsBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/controller/BookShopController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/list/BookListResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/review/BookReviewStatisticsBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookDetailsResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookItemDetailBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/constants/BookShopConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/mapper/BookShopMapper.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookSpecifications.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookDetails.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookMainFeatures.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/static/css/detail.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/PagedBookItemReviews.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/constants/BookShopConstants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookDetailsResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/review.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/main.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookDetails.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/controller/BookShopController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/BookShopApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/mapper/BookShopMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/mapper/BookShopMapper.java" />
       </list>
     </option>
   </component>
@@ -484,6 +511,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bookshop" type="462c0819:PsiDirectoryNode" />
               <item name="formbean" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bookshop" type="462c0819:PsiDirectoryNode" />
+              <item name="formbean" type="462c0819:PsiDirectoryNode" />
               <item name="review" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -546,7 +583,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book-shop" type="b2602c69:ProjectViewProjectNode" />
@@ -602,6 +639,20 @@
               <item name="bookshop" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="book-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bookshop" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book-shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book-shop" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -611,7 +662,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_ANALYSIS_RESULTS_SPLIT_PROPORTION" value="0.48607975" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579982110097" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580056259828" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="extract.method.default.visibility" value="private" />
@@ -646,22 +697,70 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BookShopApplication (2)">
-    <configuration name="BookShopApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.walmart.bookshop.BookShopApplication" />
+  <component name="RunManager" selected="JUnit.com.canemreayar.bookshop in book-shop">
+    <configuration name="BookShopMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="book-shop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.walmart.bookshop.*" />
+          <option name="PATTERN" value="com.canemreayar.bookshop.mapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.canemreayar.bookshop.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.canemreayar.bookshop.mapper.BookShopMapperTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookShopApplication (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.canemreayar.bookshop.BookShopApplication" />
+    <configuration name="BookShopMapperTest.returnCorrectFormattedSubmissionTimeWhenReviewSubmissionTimeIsValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book-shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.canemreayar.bookshop.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.canemreayar.bookshop.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.canemreayar.bookshop.mapper.BookShopMapperTest" />
+      <option name="METHOD_NAME" value="returnCorrectFormattedSubmissionTimeWhenReviewSubmissionTimeIsValid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookShopMapperTest.returnNullPageItemsBookListResponseWhenServiceResponseIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book-shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.canemreayar.bookshop.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.canemreayar.bookshop.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.canemreayar.bookshop.mapper.BookShopMapperTest" />
+      <option name="METHOD_NAME" value="returnNullPageItemsBookListResponseWhenServiceResponseIsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookShopMapperTest.returnPageItemsBookListResponseWhenServiceResponseIsNotEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="book-shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.canemreayar.bookshop.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.canemreayar.bookshop.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.canemreayar.bookshop.mapper.BookShopMapperTest" />
+      <option name="METHOD_NAME" value="returnPageItemsBookListResponseWhenServiceResponseIsNotEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.canemreayar.bookshop in book-shop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="book-shop" />
       <extension name="coverage">
         <pattern>
@@ -669,33 +768,26 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookShopApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.emreayar.bookshop.BookShopApplication" />
-      <module name="book-shop" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.emreayar.bookshop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="com.canemreayar.bookshop" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BookShopApplication" />
-      <item itemvalue="Application.BookShopApplication (1)" />
-      <item itemvalue="Application.BookShopApplication (2)" />
+      <item itemvalue="JUnit.BookShopMapperTest.returnNullPageItemsBookListResponseWhenServiceResponseIsEmpty" />
+      <item itemvalue="JUnit.BookShopMapperTest.returnPageItemsBookListResponseWhenServiceResponseIsNotEmpty" />
+      <item itemvalue="JUnit.BookShopMapperTest" />
+      <item itemvalue="JUnit.BookShopMapperTest.returnCorrectFormattedSubmissionTimeWhenReviewSubmissionTimeIsValid" />
+      <item itemvalue="JUnit.com.canemreayar.bookshop in book-shop" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BookShopApplication (2)" />
-        <item itemvalue="Application.BookShopApplication (1)" />
-        <item itemvalue="Application.BookShopApplication" />
+        <item itemvalue="JUnit.com.canemreayar.bookshop in book-shop" />
+        <item itemvalue="JUnit.BookShopMapperTest.returnCorrectFormattedSubmissionTimeWhenReviewSubmissionTimeIsValid" />
+        <item itemvalue="JUnit.BookShopMapperTest" />
+        <item itemvalue="JUnit.BookShopMapperTest.returnPageItemsBookListResponseWhenServiceResponseIsNotEmpty" />
+        <item itemvalue="JUnit.BookShopMapperTest.returnNullPageItemsBookListResponseWhenServiceResponseIsEmpty" />
       </list>
     </recent_temporary>
   </component>
@@ -712,29 +804,61 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="BookShopMapperTest_returnPageItemsBookListResponseWhenServiceResponseIsNotEmpty - 2020.01.26 at 18h 58m 33s.xml">
+      <configuration name="BookShopMapperTest.returnPageItemsBookListResponseWhenServiceResponseIsNotEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookShopMapperTest - 2020.01.26 at 19h 00m 11s.xml">
+      <configuration name="BookShopMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookShopMapperTest - 2020.01.26 at 19h 10m 11s.xml">
+      <configuration name="BookShopMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookShopMapperTest - 2020.01.26 at 19h 10m 45s.xml">
+      <configuration name="BookShopMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookShopMapperTest - 2020.01.26 at 19h 17m 42s.xml">
+      <configuration name="BookShopMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookShopMapperTest - 2020.01.26 at 19h 21m 03s.xml">
+      <configuration name="BookShopMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookShopMapperTest_returnCorrectFormattedSubmissionTimeWhenReviewSubmissionTimeIsValid - 2020.01.26 at 19h 25m 53s.xml">
+      <configuration name="BookShopMapperTest.returnCorrectFormattedSubmissionTimeWhenReviewSubmissionTimeIsValid" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookShopMapperTest_returnCorrectFormattedSubmissionTimeWhenReviewSubmissionTimeIsValid - 2020.01.26 at 19h 27m 09s.xml">
+      <configuration name="BookShopMapperTest.returnCorrectFormattedSubmissionTimeWhenReviewSubmissionTimeIsValid" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookShopMapperTest_returnCorrectFormattedSubmissionTimeWhenReviewSubmissionTimeIsValid - 2020.01.26 at 19h 28m 18s.xml">
+      <configuration name="BookShopMapperTest.returnCorrectFormattedSubmissionTimeWhenReviewSubmissionTimeIsValid" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookShopMapperTest_returnCorrectFormattedSubmissionTimeWhenReviewSubmissionTimeIsValid - 2020.01.26 at 19h 28m 58s.xml">
+      <configuration name="BookShopMapperTest.returnCorrectFormattedSubmissionTimeWhenReviewSubmissionTimeIsValid" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="13" y="23" width="1400" height="783" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4954751" visible="true" weight="0.25405008" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4954751" visible="true" weight="0.25405008" />
       <window_info id="Structure" order="1" sideWeight="0.5045249" side_tool="true" weight="0.25405008" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="SonarLint" weight="0.38929087" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3299566" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.56729376" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36034733" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3299566" />
+      <window_info anchor="bottom" id="SonarLint" order="0" weight="0.38929087" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3299566" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.39652678" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.37916064" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3299566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -744,6 +868,35 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.3298969" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4954751" visible="true" weight="0.25405008" />
+      <window_info id="Structure" order="1" sideWeight="0.5045249" side_tool="true" weight="0.25405008" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="SonarLint" order="0" weight="0.38929087" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3299566" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.39652678" />
+      <window_info anchor="bottom" id="Debug" order="4" visible="true" weight="0.37916064" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3299566" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3298969" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -757,11 +910,140 @@
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java</url>
+          <line>103</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java</url>
+          <line>74</line>
+          <properties />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java</url>
+          <line>121</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java</url>
+          <line>124</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java</url>
+          <line>87</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/mapper/BookShopMapper.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/mapper/BookShopMapperTest.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/mapper/BookShopMapperTest.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/mapper/BookShopMapper.java</url>
+          <line>144</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/mapper/BookShopMapper.java</url>
+          <line>145</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/mapper/BookShopMapper.java</url>
+          <line>151</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>restTemplate.getForObject(
+                WALMART_ITEM_REVIEWS_URL +
+                        itemId +
+                        &quot;?format=&quot; + BookShopConstants.API_FORMAT +
+                        API_KEY_PARAM + WALMART_API_KEY,
+                BookItemReviewListBean.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>restTemplate.getUriTemplateHandler()</expression-string>
         <language-id>JAVA</language-id>
@@ -775,43 +1057,12 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/emreayar/bookshop/mapper/IBookshopMapper.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="63" column="59" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/walmart/bookshop/restcontroller/ItemListRestController.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="359" column="25" selection-start-line="359" selection-start-column="25" selection-end-line="359" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contact.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/another_page.html" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
           <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -838,20 +1089,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookReview.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/booklist.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/review.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -859,52 +1096,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookDescription.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/rating.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/static/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/BookShopApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -925,37 +1120,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/util/ApplicationUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/mapper/BookShopMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -989,40 +1157,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/review/BookItemReviewListBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/review/BookItemReviewBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/list/PagedBookItemsBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/list/BookListResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1039,64 +1177,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/controller/BookShopController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/list/BookItemBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/constants/BookShopConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/mapper/BookShopMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookItemDetailBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1113,27 +1197,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookSpecifications.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/review/BookItemReviewListBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookDetailsResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="240">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookDetails.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/list/PagedBookItemsBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="62" column="36" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="62" selection-end-column="36" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1144,10 +1224,232 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/rating.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/booklist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookSpecifications.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/detail.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        <state relative-caret-position="374">
+          <caret line="111" column="28" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/review.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookDescription.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/list/BookListResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookDetailsResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="47" column="45" lean-forward="true" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/bookDetails.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="102" column="48" selection-start-line="102" selection-start-column="48" selection-end-line="102" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/PagedBookItemReviews.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/controller/BookShopController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE.jar!/org/springframework/web/client/RestTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="197" column="17" selection-start-line="197" selection-start-column="17" selection-end-line="197" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/BookShopApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mockito/mockito-core/2.23.4/mockito-core-2.23.4.jar!/org/mockito/internal/invocation/RealMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#1379#1380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/formbean/detail/BookItemDetailBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/service/BookServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="40" column="20" selection-start-line="40" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/constants/BookShopConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="68" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/service/BookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/canemreayar/bookshop/mapper/BookShopMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="143" column="79" lean-forward="true" selection-start-line="143" selection-start-column="79" selection-end-line="143" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/canemreayar/bookshop/mapper/BookShopMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="226" lean-forward="true" selection-start-line="226" selection-end-line="226" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

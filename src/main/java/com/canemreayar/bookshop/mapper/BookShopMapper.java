@@ -1,6 +1,7 @@
 package com.canemreayar.bookshop.mapper;
 
 import com.canemreayar.bookshop.constants.BookShopConstants;
+import com.canemreayar.bookshop.formbean.detail.PagedBookItemReviews;
 import com.canemreayar.bookshop.formbean.review.BookItemReviewListBean;
 import com.canemreayar.bookshop.formbean.detail.BookDetailsResponse;
 import com.canemreayar.bookshop.formbean.list.BookItemBean;
@@ -13,8 +14,6 @@ import com.canemreayar.bookshop.formbean.review.BookRatingDistributions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-
-import java.awt.print.Book;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -26,10 +25,19 @@ public class BookShopMapper {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
-    private  BookShopMapper(){}
+    private BookShopMapper(){}
 
     public BookListResponse mapToBookListResponse(BookItemsListBean itemBeanList, int pageNum){
 
+        BookListResponse bookListResponse = new BookListResponse();
+        createPaginatedBookItems(itemBeanList, bookListResponse);
+        bookListResponse.setNextPage(itemBeanList.getNextPage());
+
+        return bookListResponse;
+
+    }
+
+    private void createPaginatedBookItems(BookItemsListBean itemBeanList, BookListResponse bookListResponse) {
         AtomicInteger index = new AtomicInteger(0);
         Map<Integer, List<BookItemBean>> groupedPageItems = itemBeanList.getItems().stream()
                 .collect(Collectors.groupingBy(cdm -> index.getAndIncrement() / BookShopConstants.NUMBER_OF_ITEMS_PER_PAGE));
@@ -45,14 +53,7 @@ public class BookShopMapper {
         });
 
 
-        BookListResponse bookListResponse = new BookListResponse();
         bookListResponse.setPageItemsBeanList(pagedBookItemsBeanList);
-        bookListResponse.setNextPage(itemBeanList.getNextPage());
-        bookListResponse.setTotalPages(itemBeanList.getTotalPages());
-        bookListResponse.setOpenedPageNum(pageNum);
-
-        return bookListResponse;
-
     }
 
     public BookDetailsResponse mapToBookDetailsResponse(BookItemDetailBean itemDetail, BookItemReviewListBean bookItemReviewListBean) {
@@ -71,7 +72,10 @@ public class BookShopMapper {
         }
         bookDetailsResponse.setUpc(itemDetail.getUpc());
 
-        setBookOfferType(itemDetail, bookDetailsResponse);
+        if(itemDetail.getOfferType() != null) {
+
+            setBookOfferType(itemDetail, bookDetailsResponse);
+        }
 
         setBookOnlineAvailability(itemDetail, bookDetailsResponse);
 
@@ -81,8 +85,31 @@ public class BookShopMapper {
 
         bookDetailsResponse.setItemReviews(bookItemReviewListBean);
 
+        if(bookItemReviewListBean.getReviews() != null){
+            createPaginatedBookReviews(bookItemReviewListBean, bookDetailsResponse);
+
+        }
+
         return bookDetailsResponse;
 
+    }
+
+    private void createPaginatedBookReviews(BookItemReviewListBean bookItemReviewListBean, BookDetailsResponse bookDetailsResponse) {
+        AtomicInteger index = new AtomicInteger(0);
+        Map<Integer, List<BookItemReviewBean>> groupedPagedBookItemReviews = bookItemReviewListBean.getReviews().stream()
+                .collect(Collectors.groupingBy(cdm -> index.getAndIncrement() / BookShopConstants.NUMBER_OF_REVIEWS_PER_PAGE));
+
+        List<PagedBookItemReviews> pagedBookItemReviewsList = new ArrayList<>();
+
+        groupedPagedBookItemReviews.entrySet().stream().forEach(pageItemsMap -> {
+            List<BookItemReviewBean> singlePageItems = groupedPagedBookItemReviews.get(pageItemsMap.getKey());
+            PagedBookItemReviews pagedBookItemReviews = new PagedBookItemReviews();
+            pagedBookItemReviews.setPageItems(singlePageItems);
+            pagedBookItemReviews.setPageNum(pageItemsMap.getKey()+1);
+            pagedBookItemReviewsList.add(pagedBookItemReviews);
+        });
+
+        bookDetailsResponse.setPagedBookItemReviewsList(pagedBookItemReviewsList);
     }
 
     private void setBookOnlineAvailability(BookItemDetailBean itemDetail, BookDetailsResponse bookDetailsResponse) {
@@ -105,7 +132,7 @@ public class BookShopMapper {
         }
     }
 
-    private  void reverseRatingDistributionsHighToLow(BookItemReviewListBean bookItemReviewListBean) {
+    private void reverseRatingDistributionsHighToLow(BookItemReviewListBean bookItemReviewListBean) {
         if(bookItemReviewListBean.getReviewStatistics() != null) {
             List<BookRatingDistributions> bookRatingDistributions = bookItemReviewListBean.getReviewStatistics().getRatingDistributions();
             Collections.reverse(bookRatingDistributions);
@@ -115,7 +142,7 @@ public class BookShopMapper {
 
     private void formatReviewsSubmissionTimes(BookItemReviewListBean bookItemReviewListBean) {
         List<BookItemReviewBean> reviews = bookItemReviewListBean.getReviews();
-        SimpleDateFormat submissionTimeFormat = new SimpleDateFormat("yyyy-MM-DD'T'hh:mm:ss");
+        SimpleDateFormat submissionTimeFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         SimpleDateFormat desiredSubmissionTimeFormat = new SimpleDateFormat("MMMM dd, yyyy");
 
         if(reviews != null) {

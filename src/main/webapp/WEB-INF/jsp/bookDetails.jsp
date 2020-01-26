@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="${assetsUrl}/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="${assetsUrl}/css/detail.css"/>
 		<link rel="stylesheet" type="text/css" href="${assetsUrl}/css/review.css"/>
+		<script type="text/javascript" src="${assetsUrl}/js/main.js"></script>
 	</head>
 	<body>
 		<div id="main">
@@ -75,23 +76,41 @@
                     </div>
 
                     <div class="book_reviews">
-                         <c:forEach items="${detailOutput.itemReviews.reviews}" var="review">
-                              <div class="review">
-                                   <fmt:parseNumber var = "rating" type = "number" value = "${review.overallRating.rating}" />
-                                   <jsp:include page="rating.jsp" >
-                                        <jsp:param name="rating" value="${rating}"/>
-                                   </jsp:include>
-                                   <h4 class="book_review_title">&nbsp;${review.title}</h4>
-                                   <br/>
-                                   <div class="book_review_text">
-                                        <em>${review.reviewText}</em>
-                                   </div>
-                                   <br/>
-                                   <div class="book_review_user_date">
-                                        <small>${review.reviewer},${review.submissionTime}</small>
-                                   </div>
-                              </div>
-                         </c:forEach>
+                        	<div id="book_list_container">
+                        		<c:set var="openedPageIndex" value="0" />
+                        		<c:forEach items="${detailOutput.pagedBookItemReviewsList}" var="reviewItemList" varStatus="counter">
+                        			<div class="book_list_single_line_items" style="${counter.index != openedPageIndex ? 'display: none' : 'display: block'}">
+                        				<c:forEach items="${reviewItemList.pageItems}" var="review" varStatus="itemStatus">
+                        					<div class="review">
+                                            	<fmt:parseNumber var = "rating" type = "number" value = "${review.overallRating.rating}" />
+                                            	<jsp:include page="rating.jsp" >
+                                            		<jsp:param name="rating" value="${rating}"/>
+                                            	</jsp:include>
+                                            	<h4 class="book_review_title">&nbsp;${review.title}</h4>
+                                            	<br/>
+                                            	<div class="book_review_text">
+                                            		<em>${review.reviewText}</em>
+                                            	</div>
+                                            	<br/>
+                                            	<div class="book_review_user_date">
+                                            		<small>${review.reviewer},${review.submissionTime}</small>
+                                            	</div>
+                                            </div>
+                        				</c:forEach>
+                        			</div>
+                        	   </c:forEach>
+                            </div>
+                            <c:set var="numberOfPages" value="${fn:length(detailOutput.pagedBookItemReviewsList)}" />
+                            <c:if test="${numberOfPages > 0}">
+                             <div id="pagination">
+                                 <img class="prev" onclick="goToPreviousPage(${numberOfPages})" src="${assetsUrl}/img/paginator_prev.svg" alt="prevButton" width="30px" height="30px"
+                                      style="visibility:hidden"/>
+                                 <c:forEach begin="1" end="${numberOfPages}" varStatus="loop">
+                                     <a class="page-numbers" onclick="openAnotherPage(${loop.index},${numberOfPages})">${loop.index}</a>
+                                 </c:forEach>
+                                 <img class="next" onclick="goToNextPage(${numberOfPages})" src="${assetsUrl}/img/paginator_next.svg" alt="nextButton" width="30px" height="30px"/>
+                             </div>
+                            </c:if>
                      </div>
                 </div>
 		    </div>

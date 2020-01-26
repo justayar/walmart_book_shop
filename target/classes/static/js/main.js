@@ -5,7 +5,7 @@ function openDetail(itemId){
     window.location.href = "http://localhost:8080/bookDetails/"+itemId;
 }
 
-function openAnotherPage(pageNum,nextPage){
+function openAnotherPage(pageNum,numberOfPages){
 
      var paginationElements = document.getElementsByClassName("page-numbers");
 
@@ -22,6 +22,8 @@ function openAnotherPage(pageNum,nextPage){
      addUnderlineToOpenedPageInPagination(paginationElements,openedPageNum);
 
      setVisibilityOfPrevButton(openedPageNum);
+
+     setVisibilityOfNextButton(openedPageNum,numberOfPages);
 
 }
 
@@ -48,6 +50,28 @@ function showPrevButton(){
      prevButton[0].style.visibility = 'visible';
 }
 
+function setVisibilityOfNextButton(nextOpenedPageNum,numberOfPages){
+
+     if(nextOpenedPageNum == numberOfPages){
+        hideNextButton();
+     }else{
+        showNextButton();
+     }
+
+}
+
+
+function hideNextButton(){
+     var prevButton = document.getElementsByClassName("next");
+     prevButton[0].style.visibility = 'hidden';
+}
+
+
+function showNextButton(){
+     var prevButton = document.getElementsByClassName("next");
+     prevButton[0].style.visibility = 'visible';
+}
+
 function makeAllPageDivsToNoDisplay(pages){
 
     for(var i=0;i<pages.length;i++){
@@ -62,7 +86,7 @@ function makeVisibleToOpenedPage(pages,nextOpenedPageNum){
       pages[nextOpenedPageNumIndex].style.display = "block";
 }
 
-function goToNextPage(){
+function goToNextPage(numberOfPages){
 
     var pages = document.getElementsByClassName("book_list_single_line_items");
 
@@ -74,7 +98,9 @@ function goToNextPage(){
 
     openedPageNum +=1;
 
-    if(pages.length == openedPageNum){
+    var openedPageNumIndex = openedPageNum-1;
+
+    if(pages.length == openedPageNumIndex){
         //todo call to nextpage to get new pages
     }else{
 
@@ -83,11 +109,13 @@ function goToNextPage(){
         makeVisibleToOpenedPage(pages,openedPageNum);
 
         setVisibilityOfPrevButton(openedPageNum);
+
+        setVisibilityOfNextButton(openedPageNum,numberOfPages);
     }
 
 }
 
-function goToPreviousPage(){
+function goToPreviousPage(numberOfPages){
 
     var pages = document.getElementsByClassName("book_list_single_line_items");
 
@@ -108,6 +136,8 @@ function goToPreviousPage(){
     makeVisibleToOpenedPage(pages,openedPageNum);
 
     setVisibilityOfPrevButton(openedPageNum);
+
+    setVisibilityOfNextButton(openedPageNum,numberOfPages);
 
 }
 

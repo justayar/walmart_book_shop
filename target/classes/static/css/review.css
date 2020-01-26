@@ -84,6 +84,7 @@
 
  .book_reviews{
     display: grid;
+    width: 700px;
  }
 
  .book_review_title{

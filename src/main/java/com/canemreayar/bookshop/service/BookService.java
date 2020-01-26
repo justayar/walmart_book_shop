@@ -8,8 +8,6 @@ public interface BookService {
 
     BookItemsListBean getBookListItems();
 
-    BookItemsListBean getNextPageBookItems(String nextPage);
-
     BookItemDetailBean getBookItemDetails(int itemId);
 
     BookItemReviewListBean getBookReviews(int itemId);

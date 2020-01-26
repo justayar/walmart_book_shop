@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpStatusCodeException;
+import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 
@@ -36,6 +38,7 @@ public class BookServiceImpl implements BookService {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
+
     public BookItemsListBean getBookListItems() {
 
         logger.info("[(getBookListItems()] Book List service will be called.");
@@ -45,22 +48,23 @@ public class BookServiceImpl implements BookService {
 
         restTemplate = new RestTemplate(clientHttpRequestFactory);
 
-        return restTemplate.getForObject(
-                WALMART_LIST_REST_URL +
-                        "?category=" + BookShopConstants.BOOK_CATEGORY_ID +
-                        API_KEY_PARAM+ WALMART_API_KEY +
-                        "&format=" + BookShopConstants.API_FORMAT +
-                        "&count=200",
-                BookItemsListBean.class);
+        try {
 
+            return restTemplate.getForObject(
+                    WALMART_LIST_REST_URL +
+                            "?category=" + BookShopConstants.BOOK_CATEGORY_ID +
+                            API_KEY_PARAM + WALMART_API_KEY +
+                            "&format=" + BookShopConstants.API_FORMAT +
+                            "&count=200",
+                    BookItemsListBean.class);
 
-    }
-
-    public BookItemsListBean getNextPageBookItems(String nextPage) {
-
-        return restTemplate.getForObject(
-                nextPage,
-                BookItemsListBean.class);
+        } catch(HttpStatusCodeException ex){
+            logger.warn("[(getBookListItems()] Book Items service get error. Exception Response Body is {}",ex.getResponseBodyAsString());
+            return null;
+        } catch(RestClientException e){
+            logger.warn("[(getBookListItems()] Book Items service get error. Exception Message is {}",e.getMessage());
+            return null;
+        }
 
     }
 
@@ -79,9 +83,19 @@ public class BookServiceImpl implements BookService {
         restTemplate = new RestTemplate(clientHttpRequestFactory);
 
 
-        return restTemplate.getForObject(
-                detailUrl,
-                BookItemDetailBean.class);
+        try {
+
+            return restTemplate.getForObject(
+                    detailUrl,
+                    BookItemDetailBean.class);
+
+        } catch(HttpStatusCodeException ex){
+            logger.warn("[(getBookItemDetails()] Book Details service got error for itemId= {}. Exception Response Body is {}",itemId,ex.getResponseBodyAsString());
+            return null;
+        } catch(RestClientException e){
+            logger.warn("[(getBookItemDetails()] Book Items service got error for itemId= {}. Exception Message is {}",itemId,e.getMessage());
+            return null;
+        }
 
     }
 
@@ -89,12 +103,28 @@ public class BookServiceImpl implements BookService {
 
         logger.info("[(getBookReviews()] Book Reviews service will be called with itemId= {}",itemId);
 
-        return restTemplate.getForObject(
+        HttpComponentsClientHttpRequestFactory clientHttpRequestFactory = new HttpComponentsClientHttpRequestFactory(
+                HttpClientBuilder.create().build());
+
+        restTemplate = new RestTemplate(clientHttpRequestFactory);
+
+
+        try {
+
+            return restTemplate.getForObject(
                 WALMART_ITEM_REVIEWS_URL +
                         itemId +
                         "?format=" + BookShopConstants.API_FORMAT +
                         API_KEY_PARAM + WALMART_API_KEY,
                 BookItemReviewListBean.class);
+
+        } catch(HttpStatusCodeException ex){
+            logger.warn("[(getBookReviews()] Book Reviews service got error for itemId= {}. Exception Response Body is {}",itemId,ex.getResponseBodyAsString());
+            return null;
+        } catch(RestClientException e){
+            logger.warn("[(getBookReviews()] Book Reviews service got error for itemId= {}. Exception Message is {}",itemId,e.getMessage());
+            return null;
+        }
 
     }
 

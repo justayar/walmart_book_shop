@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -17,6 +19,7 @@ public class BookDetailsResponse {
     private double salePrice;
     private String detailImage;
     private BookItemReviewListBean itemReviews;
+    private List<PagedBookItemReviews> pagedBookItemReviewsList;
     private String author;
     private String upc;
     private String offerType;
