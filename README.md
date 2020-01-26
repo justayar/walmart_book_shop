@@ -1,7 +1,7 @@
 
 # Walmart Book Shop Application
 [![Build Status](https://travis-ci.org/justayar/walmart_book_shop.svg?branch=master)](https://travis-ci.org/justayar/walmart_book_shop)
-[![Coverage Status](https://coveralls.io/repos/github/justayar/walmart_book_shop/badge.svg?branch=master)](https://coveralls.io/github/justayar/walmart_book_shop?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/justayar/walmart_book_shop/badge.svg)](https://coveralls.io/github/justayar/walmart_book_shop)
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 Walmart Book Shop Application shows list of available books in a paginated fashion and details of books with specifications,features, and reviews. You can reach the application as followed link.
@@ -36,7 +36,6 @@ After execution completed, you can open your favourite browser and call http://l
 If you would like to test api methods as a rest client, you can use below postman collections.
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/291cfa620eb53863acb4)
-
 
 ## Copyright
 
