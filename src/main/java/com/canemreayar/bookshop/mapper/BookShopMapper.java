@@ -27,7 +27,7 @@ public class BookShopMapper {
 
     private BookShopMapper(){}
 
-    public BookListResponse mapToBookListResponse(BookItemsListBean itemBeanList, int pageNum){
+    public BookListResponse mapToBookListResponse(BookItemsListBean itemBeanList){
 
         BookListResponse bookListResponse = new BookListResponse();
         createPaginatedBookItems(itemBeanList, bookListResponse);
