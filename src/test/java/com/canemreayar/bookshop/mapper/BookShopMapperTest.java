@@ -15,8 +15,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,7 +36,7 @@ public class BookShopMapperTest {
 
         BookItemsListBean itemBeanList = new BookItemsListBean();
 
-        BookListResponse bookListResponse = bookShopMapper.mapToBookListResponse(itemBeanList, 0);
+        BookListResponse bookListResponse = bookShopMapper.mapToBookListResponse(itemBeanList);
 
         Assert.assertEquals(0,bookListResponse.getPageItemsBeanList().size());
 
@@ -56,7 +54,7 @@ public class BookShopMapperTest {
         }
         bookItemsListBean.setItems(bookItemBeanList);
 
-        BookListResponse bookListResponse = bookShopMapper.mapToBookListResponse(bookItemsListBean, 0);
+        BookListResponse bookListResponse = bookShopMapper.mapToBookListResponse(bookItemsListBean);
 
         Assert.assertEquals(1,bookListResponse.getPageItemsBeanList().size());
 
@@ -74,7 +72,7 @@ public class BookShopMapperTest {
         }
         bookItemsListBean.setItems(bookItemBeanList);
 
-        BookListResponse bookListResponse = bookShopMapper.mapToBookListResponse(bookItemsListBean, 0);
+        BookListResponse bookListResponse = bookShopMapper.mapToBookListResponse(bookItemsListBean);
 
         Assert.assertEquals(2,bookListResponse.getPageItemsBeanList().size());
 

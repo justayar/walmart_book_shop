@@ -39,7 +39,7 @@ public class BookShopController {
 
         BookItemsListBean bookItemsListBean = bookService.getBookListItems();
 
-        BookListResponse bookListResponse = bookShopMapper.mapToBookListResponse(bookItemsListBean, BookShopConstants.DEFAULT_OPENED_PAGE_NUM);
+        BookListResponse bookListResponse = bookShopMapper.mapToBookListResponse(bookItemsListBean);
 
         logger.info("[(requestHomePage()] Book List response: {} ", bookListResponse);
 
