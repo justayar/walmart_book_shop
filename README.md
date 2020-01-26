@@ -28,7 +28,7 @@ For calling below commands,first you have to go the project folder directory.
 
 ```shell
 mvn clean install
-mvn exec:java -Dexec.mainClass=com.canemreayar.bookshop.BookShopApplication
+mvn spring-boot:run
 ```
 
 After execution completed, you can open your favourite browser and call http://localhost:8080/bookList
