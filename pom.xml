@@ -84,12 +84,6 @@
 				<artifactId>springfox-swagger-ui</artifactId>
 				<version>2.9.2</version>
 			</dependency>
-			<dependency>
-				<groupId>org.eluder.coveralls</groupId>
-				<artifactId>coveralls-maven-plugin</artifactId>
-				<version>4.3.0</version>
-			</dependency>
-
 	</dependencies>
 
 	<build>
@@ -113,22 +107,7 @@
 					<mainClass>com.canemreayar.bookshop.BookShopApplication</mainClass>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.eluder.coveralls</groupId>
-				<artifactId>coveralls-maven-plugin</artifactId>
-				<version>4.3.0</version>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>cobertura-maven-plugin</artifactId>
-				<version>2.7</version>
-				<configuration>
-					<format>xml</format>
-					<maxmem>256m</maxmem>
-					<!-- aggregated reports for multi-module projects -->
-					<aggregate>true</aggregate>
-				</configuration>
-			</plugin>
+
 		</plugins>
 	</build>
 
