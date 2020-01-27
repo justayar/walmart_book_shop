@@ -51,6 +51,7 @@
     height: auto;
     font-size: .875rem;
     font-weight: 400;
+    color: black;
   }
 
   #book_list_container .book_product_price{
@@ -60,7 +61,13 @@
     line-height: 22px;
     font-size: 1rem;
     font-weight: 600;
+    color: black;
   }
+
+  .book_list_item_clickable{
+     display:block;
+     height: 100%;
+   }
 
 
 

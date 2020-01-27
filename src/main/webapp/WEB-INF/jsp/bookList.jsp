@@ -24,10 +24,12 @@
                                     <c:if test="${itemStatus.index % 4 == 0 && itemStatus.index != 0}">
                                         <hr>
                                     </c:if>
-                                    <div class="book_list_item" onClick="openDetail(${item.itemId})">
+                                    <div class="book_list_item">
+                                        <a class="book_list_item_clickable" href="/bookDetails/${item.itemId}">
                                             <img src="${item.mediumImage}" alt="mediumImage"/>
                                             <h2 class="book_product_name">${fn:substring(item.name,0, 40)}</h2>
                                             <h3 class="book_product_price">$${item.salePrice}</h3>
+                                        </a>
                                     </div>
                                 </c:forEach>
                             </div>

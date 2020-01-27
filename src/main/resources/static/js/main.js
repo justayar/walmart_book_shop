@@ -1,10 +1,5 @@
 var openedPageNum = 1;
 
-function openDetail(itemId){
-
-    window.location.href = "http://localhost:8080/bookDetails/"+itemId;
-}
-
 function openAnotherPage(pageNum,numberOfPages){
 
      var paginationElements = document.getElementsByClassName("page-numbers");
