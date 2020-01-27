@@ -5,7 +5,7 @@
 
 Walmart Book Shop Application shows list of available books in a paginated fashion and details of books with specifications,features, and reviews. You can reach the application with the followed link:
 
-[Walmart Book Shop Application Live](http://projects.spring.io/spring-boot/)
+[Walmart Book Shop Application Live](http://35.204.232.28/bookList)
 
 ## Requirements
 
