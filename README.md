@@ -21,9 +21,9 @@ For building and running the application you need:
 
 There are several ways to run a Spring application on your local machine. One way is to execute the `main` method in the `com.canemreayar.bookshop.BookShopApplication` class from your IDE.
 
-Alternatively you can use the maven exec command like:
+Alternatively you can use the maven spring-boot run command like:
 
-For calling below commands,first you have to go the project folder directory.
+For calling below commands,firstly you have to go the project folder directory.
 
 ```shell
 mvn clean install
