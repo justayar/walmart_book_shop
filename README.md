@@ -3,9 +3,7 @@
 [![Build Status](https://travis-ci.org/justayar/walmart_book_shop.svg?branch=master)](https://travis-ci.org/justayar/walmart_book_shop)
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
-Walmart Book Shop Application shows list of available books in a paginated fashion and details of books with specifications,features, and reviews. You can reach the application with the followed link:
-
-[Walmart Book Shop Application Live](http://35.204.232.28/bookList)
+Walmart Book Shop Application shows list of available books in a paginated fashion and details of books with specifications,features, and reviews.
 
 ## Requirements
 
